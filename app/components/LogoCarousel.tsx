@@ -25,10 +25,10 @@ const LogoCarousel = () => {
 
       <div className="relative w-full max-w-7xl">
         {/* Left Shadow */}
-        <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-[#0f0f0f] to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 h-full w-20  bg-transparent z-10 pointer-events-none" />
 
         {/* Right Shadow */}
-        <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-[#321745] to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 h-full w-20  bg-transparent z-10 pointer-events-none" />
 
         <Marquee speed={50} pauseOnHover={true}>
           {logos.map((logo, index) => (
