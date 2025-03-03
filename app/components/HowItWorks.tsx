@@ -32,7 +32,7 @@ export const HowItWorks: React.FC = () => {
 
   return (
     <section
-      className="flex flex-col lg:mt-[130px] items-center px-32 pt-24 w-full max-md:px-5 "
+      className="flex flex-col lg:mt-[130px] items-center lg:px-32 px-8 pt-24 w-full max-lg:px-5 "
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -41,10 +41,10 @@ export const HowItWorks: React.FC = () => {
       }}
     >
       <header className="max-w-full text-center w-[879px]">
-        <div className="flex flex-col w-full max-md:max-w-full">
+        <div className="flex flex-col w-full max-lg:max-w-full">
           {/* Animated Heading */}
           <motion.h1
-            className="[text-shadow:_1px_1px_8px_#a436f1] -pt-10 sm:text-[54px] text-[24px] md:text-5xl font-medium tracking-tighter leading-tight text-[#3D1576]"
+            className="[text-shadow:_1px_1px_8px_#a436f1] -pt-10 sm:text-[54px] text-[24px] lg:text-5xl font-medium tracking-tighter leading-tight text-[#3D1576]"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-20% 0px" }}
@@ -61,7 +61,7 @@ export const HowItWorks: React.FC = () => {
             ))}
           </motion.h1>
 
-          <p className="self-center mt-3 sm:text-[24px] text-[14px] tracking-tight leading-tight  max-md:max-w-full">
+          <p className="self-center mt-3 sm:text-[24px] text-[14px] tracking-tight leading-tight  max-lg:max-w-full">
             Gradius makes you a better student by tailoring everything according
             to your needs and style. Here's how:
           </p>
@@ -77,7 +77,7 @@ export const HowItWorks: React.FC = () => {
             whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="md:w-2/3 w-full"
+            className="lg:w-2/3 w-full"
           >
             <StepCard
               stepNumber="1"
@@ -91,13 +91,13 @@ export const HowItWorks: React.FC = () => {
               additionalText="Don't you worry, study material generation is coming soon..."
               imageSrc="/Import your study material.png"
               iconSrc="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/c467af17d22dda03b3dc1a52c6acf73c29c603a0ade0a032a8957fbeec41f795"
-              logoSrc={logo}
+              // logoSrc={logo}
               className="self-start"
             />
           </motion.div>
 
           {/* Right Image */}
-          <div className="md:w-1/3 hidden lg:inline-block ">
+          <div className="lg:w-1/3 hidden lg:inline-block ">
             <Image
               src={"/assets/icon.png"}
               width={160}
@@ -120,7 +120,7 @@ export const HowItWorks: React.FC = () => {
         {/* card 2 */}
 
         <div className="flex items-center relative justify-between">
-          <div className="md:w-1/3 hidden lg:inline-block ">
+          <div className="lg:w-1/3 hidden lg:inline-block ">
             <Image
               src={"/assets/icon.png"}
               width={160}
@@ -134,7 +134,7 @@ export const HowItWorks: React.FC = () => {
             whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="md:w-2/3 w-full"
+            className="lg:w-2/3 w-full"
           >
             <StepCard
               stepNumber="2"
@@ -151,7 +151,7 @@ export const HowItWorks: React.FC = () => {
               iconSrc="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/40a5dca75a173b57bdf1c966bf2a1d413fdef1262f4030de58fb19e755bd0848"
               headerImage="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/5834b0b83013f28b057c299224a262cdd854072bb6e2f12d58b91cdb243c3e26"
               footerImage="/assets/footer2.png"
-              className="self-end mt-36 max-md:mt-10"
+              className="self-end mt-36 max-lg:mt-10"
             />
 
           </motion.div>
@@ -175,7 +175,7 @@ export const HowItWorks: React.FC = () => {
             whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="md:w-2/3 w-full"
+            className="lg:w-2/3 w-full"
           >
             <StepCard
               stepNumber="3"
@@ -194,12 +194,12 @@ export const HowItWorks: React.FC = () => {
               iconSrc="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/0e2938146a2409b7b44a574bd96e707f82aa3e827323586e731c6fe87025c9a0"
               headerImage="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/ce0549f228a60744b7f24087ccf2ff9f1375d60311b54be9657adb93513b3ae5"
               footerImage="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/db90669345ca6bd484fffaa1c3f72cf9702db73336f1a36439783658ac97a38e"
-              className="mt-28 max-md:mt-10"
+              className="mt-28 max-lg:mt-10"
             />
           </motion.div>
 
 
-          <div className="md:w-1/3 hidden lg:inline-block ">
+          <div className="lg:w-1/3 hidden lg:inline-block ">
             <Image
               src={"/assets/icon.png"}
               width={160}
@@ -220,7 +220,7 @@ export const HowItWorks: React.FC = () => {
         </div>
 
         <div className="flex items-center mt-28 relative justify-between">
-          <div className="md:w-1/3 hidden lg:inline-block ">
+          <div className="lg:w-1/3 hidden lg:inline-block ">
             <Image
               src={"/assets/icon.png"}
               width={160}
@@ -234,7 +234,7 @@ export const HowItWorks: React.FC = () => {
             whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="md:w-2/3 w-full"
+            className="lg:w-2/3 w-full"
           >
             <StepCard
               stepNumber="4"
