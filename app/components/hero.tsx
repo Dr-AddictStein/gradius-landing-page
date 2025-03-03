@@ -8,7 +8,7 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <div>
-      <section className="max-w-[1440px] mx-auto relative flex flex-col items-center justify-center text-center sm:mt-[180px] lg:mt-[150px] mt-[100px] px-6 sm:px-4">
+      <section className="max-w-[1440px] mx-auto relative flex flex-col items-center justify-center  text-center sm:mt-[180px] lg:mt-[150px] mt-[100px] px-6 sm:px-4">
         {/* Hero Content */}
         <div className="relative w-full flex flex-col justify-center">
           <motion.h1
