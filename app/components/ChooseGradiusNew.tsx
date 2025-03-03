@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const ChooseGradiusNew = () => {
   return (
-    <div className="relative md:my-12 lg:mt-[10px] md:mt-20 -mt-16 flex flex-col items-center">
+    <div className="relative md:my-12 lg:mt-[10px] md:mt-20 pt-[450px] flex flex-col items-center">
       <div className="text-center relative">
         <motion.h3
           initial={{ scale: 0.8, opacity: 0, filter: "blur(10px)" }}
