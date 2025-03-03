@@ -3,10 +3,10 @@ import { motion } from 'framer-motion'; // Add this import
 
 const CallToAction: React.FC = () => {
   return (
-    <div className="flex gap-4 justify-center items-center mt-16 text-lg font-medium tracking-tight text-center max-md:mt-10">
+    <div className="flex gap-4 justify-center items-center mt-16 mb-14 text-lg font-medium tracking-tight text-center max-lg:mt-10">
       <div className="flex gap-4 items-center self-stretch my-auto min-w-[240px]">
-        <motion.button 
-          whileHover={{ 
+        <motion.button
+          whileHover={{
             scale: 1.1,
             transition: {
               type: "spring",

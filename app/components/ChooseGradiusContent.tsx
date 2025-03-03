@@ -23,14 +23,14 @@ const ChooseGradiusContent = () => {
     <div className="max-w-6xl w-11/12 mx-auto px-4 py-12 lg:mt-[160px]">
       <div className="text-center">
         <motion.h1
-          className="text-[#F3ECFE] text-2xl md:text-5xl font-semibold drop-shadow-[0_0_10px_#A436F1]"
+          className="text-[#F3ECFE] pt-[70px] lg:pt-0 text-2xl md:text-5xl font-semibold drop-shadow-[0_0_10px_#A436F1]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
           variants={{ visible: { transition: springTransition } }}
         >
           {headingText.split(" ").map((word, index) => (
-            <motion.span key={index} className="inline-block mr-2" variants={characterVariants}>
+            <motion.span key={index} className="md:text-3xl  mr-2" variants={characterVariants}>
               {word}
             </motion.span>
           ))}
@@ -47,7 +47,7 @@ const ChooseGradiusContent = () => {
         >
           {/* Image */}
           <Zoom>
-            <div className="w-24 md:w-32">
+            <div className="lg:w-24 md:w-32">
               <Image src={`/assets/${item}.png`} width={100} height={127} alt={`${item}`} layout="responsive" />
             </div>
           </Zoom>
@@ -103,7 +103,7 @@ const ChooseGradiusContent = () => {
           </div>
 
           {/* Side Icon */}
-          <div className="hidden md:block w-24 md:w-40">
+          <div className="hidden lg:block w-24 md:w-40">
             <Image src="/assets/Icon.png" width={200} height={200} alt="icon" layout="responsive" />
           </div>
         </div>
