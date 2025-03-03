@@ -20,17 +20,17 @@ const ChooseGradiusContent = () => {
   };
 
   return (
-    <div className="max-w-6xl w-11/12 mx-auto px-4 py-12 lg:mt-[200px]">
+    <div className="max-w-6xl w-11/12 mx-auto px-4 py-12 lg:mt-[300px]">
       <div className="text-center">
         <motion.h1
-          className="text-[#F3ECFE] pt-[160px] lg:pt-0 text-2xl md:text-5xl font-semibold drop-shadow-[0_0_10px_#A436F1]"
+          className="text-[#F3ECFE] pt-[160px] lg:pt-0 text-2xl lg:text-5xl font-semibold drop-shadow-[0_0_10px_#A436F1]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
           variants={{ visible: { transition: springTransition } }}
         >
           {headingText.split(" ").map((word, index) => (
-            <motion.span key={index} className="md:text-3xl inline-block  mr-2" variants={characterVariants}>
+            <motion.span key={index} className="md:text-3xl lg:text-5xl inline-block  mr-2" variants={characterVariants}>
               {word}
             </motion.span>
           ))}
