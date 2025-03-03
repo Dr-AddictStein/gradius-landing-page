@@ -15,7 +15,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-[32px] sm:text-[48px] lg:text-[54px] font-bold leading-tight tracking-tight text-white drop-shadow-md [text-shadow:_1px_1px_10px_#A436F1]"
+            className="text-[32px] sm:text-[48px] lg:text-[54px] md:text-[32px] md:pb-3 font-bold leading-tight tracking-tight text-white drop-shadow-md [text-shadow:_1px_1px_10px_#A436F1]"
           >
             Get the first self-trained AI Tutor that
             <br className="hidden sm:block" /> matches your unique learning style
@@ -56,7 +56,7 @@ const Hero = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.5, duration: 0.6 }}
             >
-              <Image src={image.src} alt={image.alt} width={image.width} height={image.height} className="object-contain hidden md:inline-block" priority />
+              <Image src={image.src} alt={image.alt} width={image.width} height={image.height} className="object-contain lg:block hidden md:hidden" priority />
             </motion.div>
           ))}
         </div>

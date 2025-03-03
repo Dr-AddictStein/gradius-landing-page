@@ -67,7 +67,7 @@ export default function Home() {
           </div>
 
           {/* Pricing */}
-          <div id="pricing" className="section mt-24">
+          <div id="pricing" className="section mt-20">
             <PricingPlans />
           </div>
 
@@ -75,7 +75,7 @@ export default function Home() {
           <div id="faq" className="section mt-24">
             <FAQSection />
 
-            <UpLavel></UpLavel>
+            { }
           </div>
 
           <div className='section mt-24' >

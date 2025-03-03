@@ -5,7 +5,7 @@ import { StepCard } from "./StepCard";
 import { UnlockPotentialCard } from "./UnlockPotentialCard";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+import logo from '/public/logo.png'
 export const HowItWorks: React.FC = () => {
   const headingText = "Cool, but how does it work?!";
 
@@ -32,7 +32,7 @@ export const HowItWorks: React.FC = () => {
 
   return (
     <section
-      className="flex flex-col lg:mt-[130px] items-center px-32 pt-24 w-full max-md:px-5 max-md:max-w-full"
+      className="flex flex-col lg:mt-[130px] items-center px-32 pt-24 w-full max-md:px-5 "
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -44,7 +44,7 @@ export const HowItWorks: React.FC = () => {
         <div className="flex flex-col w-full max-md:max-w-full">
           {/* Animated Heading */}
           <motion.h1
-            className="[text-shadow:_1px_1px_8px_#a436f1] sm:text-[54px] text-[24px] md:text-5xl font-medium tracking-tighter leading-tight text-[#3D1576]"
+            className="[text-shadow:_1px_1px_8px_#a436f1] -pt-10 sm:text-[54px] text-[24px] md:text-5xl font-medium tracking-tighter leading-tight text-[#3D1576]"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-20% 0px" }}
@@ -53,7 +53,7 @@ export const HowItWorks: React.FC = () => {
             {headingText.split("").map((char, index) => (
               <motion.span
                 key={index}
-                className="inline-block"
+                className="inline-block "
                 variants={characterVariants}
               >
                 {char === " " ? "\u00A0" : char}
@@ -61,7 +61,7 @@ export const HowItWorks: React.FC = () => {
             ))}
           </motion.h1>
 
-          <p className="self-center mt-6 sm:text-[24px] text-[14px] tracking-tight leading-tight  max-md:max-w-full">
+          <p className="self-center mt-3 sm:text-[24px] text-[14px] tracking-tight leading-tight  max-md:max-w-full">
             Gradius makes you a better student by tailoring everything according
             to your needs and style. Here's how:
           </p>
@@ -91,13 +91,13 @@ export const HowItWorks: React.FC = () => {
               additionalText="Don't you worry, study material generation is coming soon..."
               imageSrc="/Import your study material.png"
               iconSrc="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/c467af17d22dda03b3dc1a52c6acf73c29c603a0ade0a032a8957fbeec41f795"
-              logoSrc="/app import logos.png"
+              logoSrc={logo}
               className="self-start"
             />
           </motion.div>
 
           {/* Right Image */}
-          <div className="md:w-1/3 hidden md:inline-block ">
+          <div className="md:w-1/3 hidden lg:inline-block ">
             <Image
               src={"/assets/icon.png"}
               width={160}
@@ -107,7 +107,7 @@ export const HowItWorks: React.FC = () => {
           </div>
 
           {/* Bottom Centered Image */}
-          <div className="absolute hidden md:inline-block  -bottom-14 right-56">
+          <div className="absolute hidden lg:inline-block  -bottom-14 right-56">
             <Image
               src={"/assets/Elements.png"}
               width={205}
@@ -120,7 +120,7 @@ export const HowItWorks: React.FC = () => {
         {/* card 2 */}
 
         <div className="flex items-center relative justify-between">
-          <div className="md:w-1/3 hidden md:inline-block ">
+          <div className="md:w-1/3 hidden lg:inline-block ">
             <Image
               src={"/assets/icon.png"}
               width={160}
@@ -128,7 +128,7 @@ export const HowItWorks: React.FC = () => {
               alt="icon"
             />
           </div>
-          
+
           <motion.div
             initial={{ scale: 0.8, opacity: 0, filter: "blur(10px)" }}
             whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
@@ -136,7 +136,7 @@ export const HowItWorks: React.FC = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="md:w-2/3 w-full"
           >
-           <StepCard
+            <StepCard
               stepNumber="2"
               title={
                 <>
@@ -153,11 +153,11 @@ export const HowItWorks: React.FC = () => {
               footerImage="/assets/footer2.png"
               className="self-end mt-36 max-md:mt-10"
             />
-          
+
           </motion.div>
-           
-         
-          <div className="absolute hidden md:inline-block  -bottom-14 left-0">
+
+
+          <div className="absolute hidden lg:inline-block  -bottom-14 left-0">
             <Image
               src={"/assets/Element3.png"}
               width={205}
@@ -169,7 +169,7 @@ export const HowItWorks: React.FC = () => {
 
         {/* 3 */}
         <div className="flex items-center relative justify-between">
-         
+
           <motion.div
             initial={{ scale: 0.8, opacity: 0, filter: "blur(10px)" }}
             whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
@@ -177,7 +177,7 @@ export const HowItWorks: React.FC = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="md:w-2/3 w-full"
           >
-           <StepCard
+            <StepCard
               stepNumber="3"
               title="Just Study! Let Gradius do the rest"
               description={
@@ -197,9 +197,9 @@ export const HowItWorks: React.FC = () => {
               className="mt-28 max-md:mt-10"
             />
           </motion.div>
-            
-          
-          <div className="md:w-1/3 hidden md:inline-block ">
+
+
+          <div className="md:w-1/3 hidden lg:inline-block ">
             <Image
               src={"/assets/icon.png"}
               width={160}
@@ -209,7 +209,7 @@ export const HowItWorks: React.FC = () => {
           </div>
 
           {/* Bottom Centered Image */}
-          <div className="absolute hidden md:inline-block -bottom-14 right-56">
+          <div className="absolute hidden lg:inline-block -bottom-14 right-56">
             <Image
               src={"/assets/Elements.png"}
               width={205}
@@ -220,7 +220,7 @@ export const HowItWorks: React.FC = () => {
         </div>
 
         <div className="flex items-center mt-28 relative justify-between">
-          <div className="md:w-1/3 hidden md:inline-block ">
+          <div className="md:w-1/3 hidden lg:inline-block ">
             <Image
               src={"/assets/icon.png"}
               width={160}
@@ -228,7 +228,7 @@ export const HowItWorks: React.FC = () => {
               alt="icon"
             />
           </div>
-         
+
           <motion.div
             initial={{ scale: 0.8, opacity: 0, filter: "blur(10px)" }}
             whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
@@ -245,9 +245,9 @@ export const HowItWorks: React.FC = () => {
               headerImage="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/b6e5537bb59c17d4aa195a759dc79d3c1bdd39278fbfa6a0f2a16dd713d37d2f"
             />
           </motion.div>
-           
-        
-          <div className="absolute hidden md:inline-block  -bottom-14 ">
+
+
+          <div className="absolute hidden lg:inline-block  -bottom-14 ">
             <Image
               src={"/assets/Element3.png"}
               width={205}
@@ -258,14 +258,14 @@ export const HowItWorks: React.FC = () => {
         </div>
 
         <div className="w-full">
-        <motion.div
+          <motion.div
             initial={{ scale: 0.8, opacity: 0, filter: "blur(10px)" }}
             whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="full"
           >
-          <UnlockPotentialCard />
+            <UnlockPotentialCard />
           </motion.div>
         </div>
       </div>

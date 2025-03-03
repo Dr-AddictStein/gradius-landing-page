@@ -49,7 +49,7 @@ const PersonalizedLearning = () => {
           whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.6, ease: "easeOut" }} // Smooth zoom effect
-          className="w-full flex flex-col md:flex-row p-9 bg-[#160F22] rounded-xl justify-center items-center"
+          className="w-full flex flex-col lg:flex-row p-9 bg-[#160F22] rounded-xl justify-center items-center"
         >
           <div className="flex-1">
             <Image
@@ -133,7 +133,7 @@ const PersonalizedLearning = () => {
           whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.6, ease: "easeOut" }} // Smooth zoom effect
-          className="w-full flex flex-col md:flex-row  p-9 bg-[#160F22] rounded-xl justify-center items-center" >
+          className="w-full flex flex-col-reverse  lg:flex-row  p-9 bg-[#160F22] rounded-xl justify-center items-center" >
 
 
           <div className="flex-1  relative text-[#F3ECFEB2]">

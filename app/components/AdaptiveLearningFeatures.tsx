@@ -29,17 +29,17 @@ const features: FeatureCardProps[] = [
 const AdaptiveLearningFeatures: React.FC = () => {
   return (
     <section
-      className="flex flex-col items-center lg:mt-[120px] justify-center px-4 py-20 w-full sm:px-8 lg:px-16"
-        style = {{
+      className="flex flex-col items-center lg:mt-[80px] justify-center px-4 py-20 w-full sm:px-8 lg:px-16"
+      style={{
 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-    > 
+    >
 
       <div className="flex flex-col self-center max-w-full text-center w-[846px]">
         <div className="flex flex-col w-full max-md:max-w-full">
-          <motion.h1 
+          <motion.h1
             className="text-6xl font-medium tracking-tighter leading-none sm:text-[#0F0F0F] max-md:max-w-full max-md:text-4xl [text-shadow:_1px_1px_8px_#a436f1]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -53,8 +53,8 @@ const AdaptiveLearningFeatures: React.FC = () => {
           >
             Adaptive Learning Features
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             className="mt-6 text-lg tracking-tight leading-7 sm:text-[#0F0F0F]  max-md:max-w-full"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -82,8 +82,8 @@ const AdaptiveLearningFeatures: React.FC = () => {
           <FeatureCard key={index} {...feature} />
         ))}
       </div>
-      
-      
+
+
 
     </section>
   );

@@ -6,7 +6,7 @@ import { DotIcon } from "lucide-react";
 import { Zoom } from "react-awesome-reveal";
 
 const ChooseGradiusContent = () => {
-  const headingText = "Cool, but how does it work?!";
+  const headingText = "Why you should choose Gradius today";
   const springTransition = {
     type: "spring",
     stiffness: 80,
@@ -29,9 +29,9 @@ const ChooseGradiusContent = () => {
           viewport={{ once: false, amount: 0.3 }}
           variants={{ visible: { transition: springTransition } }}
         >
-          {headingText.split(" ").map((char, index) => (
-            <motion.span key={index} className="inline-block" variants={characterVariants}>
-              {char === " " ? "\u00A0" : char}
+          {headingText.split(" ").map((word, index) => (
+            <motion.span key={index} className="inline-block mr-2" variants={characterVariants}>
+              {word}
             </motion.span>
           ))}
         </motion.h1>
@@ -42,9 +42,8 @@ const ChooseGradiusContent = () => {
       {[1, 2, 3].map((item, index) => (
         <div
           key={index}
-          className={`flex flex-col md:flex-row items-center gap-7 md:gap-12 mt-16 md:mt-32 ${
-            index % 2 !== 0 ? "md:flex-row-reverse" : ""
-          }`}
+          className={`flex flex-col md:flex-row items-center gap-7 md:gap-12 mt-16 md:mt-32 ${index % 2 !== 0 ? "md:flex-row-reverse" : ""
+            }`}
         >
           {/* Image */}
           <Zoom>
@@ -68,32 +67,30 @@ const ChooseGradiusContent = () => {
                 "Study Less, Get Better Grades!",
               ][index]
                 .split(" ")
-                .map((char, i) => (
-                  <motion.span key={i} className="inline-block" variants={characterVariants}>
-                    {char === " " ? "\u00A0" : char}
+                .map((word, i) => (
+                  <motion.span key={i} className="inline-block mr-2" variants={characterVariants}>
+                    {word}
                   </motion.span>
                 ))}
             </motion.h1>
 
             <div className="mt-6 space-y-3">
-              {[
-                [
-                  "Gradius helps you unlock and value your unique learning style",
-                  "Everyone learns differently, and traditional, standardized methods aren't effective for everyone",
-                  "With Gradius, you’ll be guided to study in the way that works best for you",
-                  "Over time, you’ll be creating the perfect tutor for yourself, without even realizing it",
-                ],
-                [
-                  "No more trial and error, no more endless searching for the right study technique",
-                  "By using Gradius, you’ll automatically receive the personalized guidance you need to succeed",
-                  "Focus on your studies without the stress of figuring out what works for you",
-                ],
-                [
-                  "Personalized learning is proven to boost performance more than twofold",
-                  "Studies from top universities show personalized learning can halve study time",
-                  "Gradius helps you focus on quality over quantity, resulting in better results with less effort",
-                ],
-              ][index].map((text, j) => (
+              {[[
+                "Gradius helps you unlock and value your unique learning style",
+                "Everyone learns differently, and traditional, standardized methods aren't effective for everyone",
+                "With Gradius, you’ll be guided to study in the way that works best for you",
+                "Over time, you’ll be creating the perfect tutor for yourself, without even realizing it",
+              ],
+              [
+                "No more trial and error, no more endless searching for the right study technique",
+                "By using Gradius, you’ll automatically receive the personalized guidance you need to succeed",
+                "Focus on your studies without the stress of figuring out what works for you",
+              ],
+              [
+                "Personalized learning is proven to boost performance more than twofold",
+                "Studies from top universities show personalized learning can halve study time",
+                "Gradius helps you focus on quality over quantity, resulting in better results with less effort",
+              ]][index].map((text, j) => (
                 <p
                   key={j}
                   className="flex items-start text-left text-sm md:text-base bg-gradient-to-r from-[#FFFFFF] to-[#A436F1] text-transparent bg-clip-text"
@@ -101,6 +98,7 @@ const ChooseGradiusContent = () => {
                   <DotIcon className="text-white mr-2 mt-1" /> {text}
                 </p>
               ))}
+
             </div>
           </div>
 

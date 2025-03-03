@@ -15,7 +15,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isYearly = false }) => {
   return (
     <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full ">
       <div className="flex flex-col items-start px-12 py-7 w-full h-full rounded-xl border-purple-600 border-solid border-[3px] max-md:px-5 max-md:mt-9 max-md:max-w-full min-h-[550px]">
-        <div className="flex gap-7 text-xl font-bold tracking-normal leading-snug text-center text-white max-md:ml-1.5">
+        <div className="flex gap-7 text-xl font-bold tracking-normal leading-snug text-center  text-white max-md:ml-1.5">
 
           <div className="basis-auto">{plan.title}</div>
 
@@ -28,7 +28,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isYearly = false }) => {
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/07b0de19389f16f5ad0b5f06c345fecd0263c895270e1f7848fbac1d57a633e4?apiKey=1fb2522fd6c94611a6950922dca36db5&"
-                  className="object-cover absolute inset-0 size-full"
+                  className="object-cover absolute inset-0 size-full "
                   alt=""
                 />
 
@@ -46,14 +46,14 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isYearly = false }) => {
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/02c8d4341221e5446d251be39106da97db0c81e21993988dfef68b270a8dcb3d?apiKey=1fb2522fd6c94611a6950922dca36db5&"
-                  className="object-contain aspect-square w-[13px]"
+                  className="object-contain aspect-square w-[8px]"
                   alt=""
                 />
 
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/5695f24427b3ec59adf43b74ede569df3f7511fa82029d8498d13a1add970c4b?apiKey=1fb2522fd6c94611a6950922dca36db5&"
-                  className="object-contain mt-2.5 aspect-square w-[25px]"
+                  className="object-contain  aspect-square w-[16px]"
                   alt=""
                 />
 
@@ -67,7 +67,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isYearly = false }) => {
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/c7c7d73b253e719f4c99beb9febe83089ccd8e405aaf4faac899a07e1ccc444a?apiKey=1fb2522fd6c94611a6950922dca36db5&"
-              className="object-contain shrink-0 aspect-[1.04] w-[25px]"
+              className="object-contain shrink-0 aspect-[1.04] w-[16px]"
               alt=""
             />
           )}

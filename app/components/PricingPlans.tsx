@@ -59,11 +59,11 @@ const PricingPlans: React.FC = () => {
   };
   return (
     <div className="flex flex-col mt-44">
-      <div className="flex overflow-hidden flex-col items-center px-32 pb-16 pt-0 w-full min-h-[500px] max-md:px-5 max-md:max-w-full">
+      <div className="flex overflow-hidden flex-col items-center px-32 pb-16 pt-0 w-full min-h-[500px] max-md:px-5 w-full">
         <div className="flex flex-col max-w-full text-center w-[846px]">
           <div className="flex flex-col w-full max-md:max-w-full">
             <motion.h1
-              className="text-[#F3ECFE] text-[21px] md:text-5xl font-semibold text-drop-shadow-[0_0_10px_#A436F1]"
+              className="text-[#F3ECFE] drop-shadow-[0_0_10px_#A436F1] text-[21px] md:text-5xl font-semibold text-drop-shadow-[0_0_10px_#A436F1]"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false, amount: 0.3 }}
@@ -76,7 +76,7 @@ const PricingPlans: React.FC = () => {
                 .map((char, index) => (
                   <motion.span
                     key={index}
-                    className="inline-block"
+                    className="inline-block "
                     variants={characterVariants}
                   >
                     {char === " " ? "\u00A0" : char}
@@ -91,7 +91,7 @@ const PricingPlans: React.FC = () => {
         </div>
 
         <div className="mt-12 max-w-full w-[938px] max-md:mt-8">
-          <div className="flex gap-5 max-md:flex-col items-stretch">
+          <div className="flex gap-5 flex-col lg:flex-row items-stretch">
             <PlanCard plan={monthlyPlan} />
             <PlanCard plan={yearlyPlan} isYearly={true} />
           </div>

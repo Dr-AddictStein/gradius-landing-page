@@ -36,7 +36,7 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center px-6 md:px-24 py-16 text-black">
+    <div className="flex flex-col items-center px-6 md:px-24 lg:py-16 -mt-24 md:-mt-0 text-black">
       {/* FAQ Heading */}
       <motion.h1
         className="text-[#F3ECFE] text-3xl md:text-5xl font-semibold text-center drop-shadow-[0_0_10px_#A436F1]"
