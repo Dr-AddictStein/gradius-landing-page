@@ -13,7 +13,7 @@ const ChooseGradiusNew = () => {
           whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-3xl md:text-6xl lg:text-[64px] font-[Inter] font-medium leading-[100px] tracking-tight bg-gradient-to-b from-[#A436F1] to-[#6E27D5] text-transparent bg-clip-text drop-shadow-[0px_0px_15px_#A436F1]"
+          className="text-3xl md:text-6xl lg:text-[64px] pb-2 font-[Inter] font-medium leading-[100px] tracking-tight bg-gradient-to-b from-[#A436F1] to-[#6E27D5] text-transparent bg-clip-text drop-shadow-[0px_0px_15px_#A436F1]"
         >
           Backed by
         </motion.h3>
@@ -23,7 +23,7 @@ const ChooseGradiusNew = () => {
           whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-3xl md:text-7xl lg:text-[80px] md:mt-0 -mt-10 font-medium leading-tight bg-gradient-to-b from-[#6E27D5] to-[#39146F] text-transparent bg-clip-text drop-shadow-[0px_0px_15px_#A436F1]"
+          className="text-3xl md:text-7xl lg:text-[80px]  pb-5 md:mt-0 -mt-10 font-medium leading-tight bg-gradient-to-b from-[#6E27D5] to-[#39146F] text-transparent bg-clip-text drop-shadow-[0px_0px_15px_#A436F1]"
         >
           Cognitive Research
         </motion.h1>
