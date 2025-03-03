@@ -14,8 +14,8 @@ const UpLavel = () => {
           <div className="h-[150px] -z-0 top-24 absolute  mt-1/2 rotate-12 w-[600px] bg-[#000000] rounded-full blur-3xl"></div>
           <div className="h-[240px] -top-16  blur-3xl absolute -right-16  -rotate-45 w-[240px] bg-[#000000] rounded-full "></div>
           <div className="h-[240px] -bottom-28  blur-3xl absolute -left-16  -rotate-45 w-[240px] bg-[#000000] rounded-full "></div>
-          <h1 className="text-center text-[#F3ECFE] mt-7 text-2xl drop-shadow-[0_0_10px_#A436F1] md:text-4xl z-50">One-size-doesn’t-fit-all <br /> Level up now!</h1>
-          <p className="text-[#862cc7] font-semibold text-center z-50">Study Less <span className="text-[#F3ECFE]">get</span> Better Grades</p>
+          <h1 className="text-center text-[#F3ECFE] mt-7 text-2xl drop-shadow-[0_0_10px_#862cc7] md:text-4xl z-50">One-size-doesn’t-fit-all <br /> Level up now!</h1>
+          <p className="text-[#862cc7] drop-shadow-[0_0_10px_#6E27D5] font-semibold text-center z-50">Study Less <span className="text-[#F3ECFE]">get</span> Better Grades</p>
           <div className="mt-6 flex justify-center">
             <button className="flex items-center gap-2 px-4 sm:py-2 py-2 rounded-lg border border-[#A436F1] text-white font-medium sm:text-[18px] text-[12px] transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
               Start studying for free <ArrowRight />

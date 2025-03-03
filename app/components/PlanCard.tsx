@@ -74,12 +74,12 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isYearly = false }) => {
 
         </div>
 
-        <div className="flex gap-1 mt-[20px] whitespace-nowrap max-md:mt-10 max-md:ml-0.5">
+        <div className="flex relative gap-1 mt-[20px] whitespace-nowrap max-md:mt-10 max-md:ml-0.5">
 
           <div className="grow text-2xl leading-none text-center text-white">
             {plan.price}
           </div>
-
+          <div className="w-[85px] top-3 absolute border-purple-900   border"></div>
           <div className="text-sm tracking-wide leading-snug text-zinc-400">
             {plan.billingPeriod}
           </div>

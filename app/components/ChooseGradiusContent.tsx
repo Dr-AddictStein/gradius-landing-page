@@ -74,7 +74,7 @@ const ChooseGradiusContent = () => {
                 ))}
             </motion.h1>
 
-            <div className="mt-6 space-y-3">
+            <div className="mt-6 mb-24 space-y-3">
               {[[
                 "Gradius helps you unlock and value your unique learning style",
                 "Everyone learns differently, and traditional, standardized methods aren't effective for everyone",
@@ -93,7 +93,7 @@ const ChooseGradiusContent = () => {
               ]][index].map((text, j) => (
                 <p
                   key={j}
-                  className="flex items-start text-left text-sm md:text-base bg-gradient-to-r from-[#FFFFFF] to-[#A436F1] text-transparent bg-clip-text"
+                  className="flex items-start  text-left text-sm md:text-base bg-gradient-to-r from-[#FFFFFF] to-[#A436F1] text-transparent bg-clip-text"
                 >
                   <DotIcon className="text-white mr-2 mt-1" /> {text}
                 </p>

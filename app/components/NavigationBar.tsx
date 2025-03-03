@@ -6,8 +6,8 @@ import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 
 const NavLink = ({ children, href = '#', onClick }: { children: React.ReactNode, href?: string, onClick?: () => void }) => (
-  <Link 
-    href={href} 
+  <Link
+    href={href}
     onClick={onClick}
     className="px-3 py-2 text-[16px] text-white transition-all duration-200 hover:opacity-80 font-normal"
   >
@@ -35,7 +35,7 @@ export const NavigationBar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex gap-8 items-center text-white">
-        <NavLink href="#home">Home</NavLink>
+          <NavLink href="#home">Home</NavLink>
           <NavLink href="#features">Features</NavLink>
           <NavLink href="#how-it-works">How it works</NavLink>
           <NavLink href="#pricing">Pricing</NavLink>
@@ -49,13 +49,13 @@ export const NavigationBar = () => {
             <button className="px-4 py-1.5 rounded-[8px] border border-[#A436F1] text-white text-[15px] hover:bg-[#A436F1] transition-all duration-300">
               Login
             </button>
-            <button className="px-4 py-1.5 rounded-[8px] border border-[#A436F1] bg-[#A436F1] text-white text-[15px] hover:bg-[#8929d1] transition-all duration-300">
+            <button className="px-4 py-1.5 rounded-[8px] border border-[#A436F1] text-white text-[15px] hover:bg-[#A436F1] transition-all duration-300">
               Sign up for free
             </button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="lg:hidden text-white p-2 z-[101]"
             onClick={toggleMenu}
             aria-label="Toggle menu"
@@ -65,10 +65,9 @@ export const NavigationBar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div 
-          className={`fixed left-0 right-0 top-[0px] h-[calc(100vh-72px)] bg-[#14021C] lg:hidden transition-transform duration-300 ${
-            isMenuOpen ? 'translate-y-0' : '-translate-y-full'
-          }`}
+        <div
+          className={`fixed left-0 right-0 top-[0px] h-[calc(100vh-72px)] bg-[#14021C] lg:hidden transition-transform duration-300 ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'
+            }`}
         >
           <div className="flex flex-col p-6 gap-6">
             <div className="flex flex-col gap-1">
@@ -78,7 +77,7 @@ export const NavigationBar = () => {
               <NavLink onClick={toggleMenu}>Pricing</NavLink>
               <NavLink onClick={toggleMenu}>FAQ</NavLink>
             </div>
-            
+
             <div className="flex flex-col gap-4 pt-6 border-t border-white/[0.08]">
               <button className="w-full px-4 py-3 rounded-[8px] border border-[#A436F1] text-white text-[15px] hover:bg-[#A436F1] transition-all duration-300">
                 Login

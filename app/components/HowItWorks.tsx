@@ -32,7 +32,7 @@ export const HowItWorks: React.FC = () => {
 
   return (
     <section
-      className="flex flex-col lg:mt-[130px] items-center lg:px-32 px-8 pt-24 w-full max-lg:px-5 "
+      className="flex flex-col lg:mt-[20px] items-center lg:px-32 px-8 pt-24 w-full max-lg:px-5 "
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -44,7 +44,7 @@ export const HowItWorks: React.FC = () => {
         <div className="flex flex-col w-full max-lg:max-w-full">
           {/* Animated Heading */}
           <motion.h1
-            className="[text-shadow:_1px_1px_8px_#a436f1] -pt-10 sm:text-[54px] text-[24px] lg:text-5xl font-medium tracking-tighter leading-tight text-[#3D1576]"
+            className="[text-shadow:_1px_1px_8px_#a436f1] -pt-24 sm:text-[54px] text-[24px] lg:text-5xl font-medium tracking-tighter leading-tight text-[#3D1576]"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-20% 0px" }}
@@ -151,7 +151,7 @@ export const HowItWorks: React.FC = () => {
               iconSrc="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/40a5dca75a173b57bdf1c966bf2a1d413fdef1262f4030de58fb19e755bd0848"
               headerImage="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/5834b0b83013f28b057c299224a262cdd854072bb6e2f12d58b91cdb243c3e26"
               footerImage="/assets/footer2.png"
-              className="self-end mt-36 max-lg:mt-10"
+              className="self-end mt-14 max-lg:mt-10"
             />
 
           </motion.div>
@@ -175,7 +175,7 @@ export const HowItWorks: React.FC = () => {
             whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="lg:w-2/3 w-full"
+            className="lg:w-2/3 lg:-mt-16 w-full"
           >
             <StepCard
               stepNumber="3"
@@ -219,7 +219,7 @@ export const HowItWorks: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex items-center mt-28 relative justify-between">
+        <div className="flex items-center mt-14 relative justify-between">
           <div className="lg:w-1/3 hidden lg:inline-block ">
             <Image
               src={"/assets/icon.png"}

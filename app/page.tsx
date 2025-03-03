@@ -75,7 +75,7 @@ export default function Home() {
           <div id="faq" className="section mt-24">
             <FAQSection />
 
-            { }
+            <UpLavel />
           </div>
 
           <div className='section mt-24' >

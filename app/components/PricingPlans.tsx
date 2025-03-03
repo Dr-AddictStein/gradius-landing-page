@@ -1,8 +1,8 @@
 "use client";
 
-import React from 'react';
-import PlanCard from './PlanCard';
-import { PlanDetails } from './types';
+import React from "react";
+import PlanCard from "./PlanCard";
+import { PlanDetails } from "./types";
 import { motion } from "framer-motion";
 
 const monthlyPlan: PlanDetails = {
@@ -15,9 +15,9 @@ const monthlyPlan: PlanDetails = {
   features: [
     "Paid monthly, cancel anytime.",
     "Enjoy personalized learning flexibly.",
-    "3 months unpaid = AI progress lost"
+    "3 months unpaid = AI progress lost",
   ],
-  buttonText: "Sign me up"
+  buttonText: "Sign me up",
 };
 
 const yearlyPlan: PlanDetails = {
@@ -30,9 +30,9 @@ const yearlyPlan: PlanDetails = {
   features: [
     "50% off: pay just €119.88/year.",
     "Your AI-Tutor all year round!",
-    "Never lose your progess!"
+    "Never lose your progress!",
   ],
-  buttonText: "Sign me up"
+  buttonText: "Sign me up",
 };
 
 const PricingPlans: React.FC = () => {
@@ -58,44 +58,29 @@ const PricingPlans: React.FC = () => {
     },
   };
   return (
-    <div className="flex flex-col mt-44">
-      <div className="flex overflow-hidden flex-col items-center px-32 pb-16 pt-0 w-full min-h-[500px] max-lg:px-5 ">
-        <div className="flex flex-col max-w-full text-center w-[846px]">
-          <div className="flex flex-col w-full max-lg:max-w-full">
-            <motion.h1
-              className="text-[#F3ECFE] drop-shadow-[0_0_10px_#A436F1] text-[21px] lg:text-5xl font-semibold text-drop-shadow-[0_0_10px_#A436F1]"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false, amount: 0.3 }}
-              variants={{
-                visible: { transition: springTransition },
-              }}
-            >
-              {"Level up to personalized learning!"
-                .split("")
-                .map((char, index) => (
-                  <motion.span
-                    key={index}
-                    className="inline-block "
-                    variants={characterVariants}
-                  >
-                    {char === " " ? "\u00A0" : char}
-                  </motion.span>
-                ))}
-            </motion.h1>
-            <p className="mt-6 text-lg tracking-tight leading-7 text-purple-100 text-opacity-70 max-lg:max-w-full">
-              Get started today—your first 7 days are on us! <br />
-              No card required!
-            </p>
-          </div>
-        </div>
+    <div className="flex flex-col items-center mt-16 lg:mt-36 px-6 sm:px-12 lg:px-24 w-full">
+      <div className="text-center max-w-4xl">
+        <motion.h1
+          className="text-[#F3ECFE] text-2xl lg:text-5xl font-semibold drop-shadow-[0_0_10px_#A436F1]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+          variants={{ visible: { transition: springTransition } }}
+        >
+          {"Level up to personalized learning!".split(" ").map((word, index) => (
+            <motion.span key={index} className="inline-block mr-1" variants={characterVariants}>
+              {word}
+            </motion.span>
+          ))}
+        </motion.h1>
+        <p className="mt-6 text-lg leading-7 text-purple-100 text-opacity-70">
+          Get started today—your first 7 days are on us! <br /> No card required!
+        </p>
+      </div>
 
-        <div className="mt-12 max-w-full w-[938px] max-lg:mt-8">
-          <div className="flex gap-5 flex-col lg:flex-row items-stretch">
-            <PlanCard plan={monthlyPlan} />
-            <PlanCard plan={yearlyPlan} isYearly={true} />
-          </div>
-        </div>
+      <div className="mt-12 w-full lg:max-w-6xl flex flex-col lg:flex-row gap-6">
+        <PlanCard plan={monthlyPlan} />
+        <PlanCard plan={yearlyPlan} isYearly={true} />
       </div>
     </div>
   );
