@@ -4,11 +4,12 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import ScrollToTop from "./ScrollToTop"; // Import ScrollToTop component
 
 const Hero = () => {
   return (
     <div>
-      <section className="max-w-[1440px] mx-auto relative flex flex-col items-center justify-center  text-center sm:mt-[180px] lg:mt-[150px] mt-[100px] px-6 sm:px-4">
+      <section className="max-w-[1440px] mx-auto relative flex flex-col items-center justify-center text-center sm:mt-[180px] lg:mt-[150px] mt-[100px] px-6 sm:px-4">
         {/* Hero Content */}
         <div className="relative w-full flex flex-col justify-center">
           <motion.h1
@@ -39,7 +40,7 @@ const Hero = () => {
             Study Less <span className="text-[#F3ECFEB2]">get</span> Better Grades
           </motion.p>
 
-          {/* Star Images with Motion Animation */}
+          {/* Star Images */}
           {[
             { src: "/StarBig.png", alt: "Star", width: 40, height: 40, style: "absolute -top-[15%] left-[16%] " },
             { src: "/StarBig.png", alt: "Star", width: 40, height: 40, style: "absolute -top-[17%] right-[16%] " },
@@ -77,6 +78,9 @@ const Hero = () => {
           </motion.button>
         </motion.div>
       </section>
+
+      {/* Scroll to Top Button */}
+
     </div>
   );
 };
