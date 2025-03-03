@@ -23,7 +23,7 @@ const LogoCarousel = () => {
         Trusted by University Societies Globally
       </h2>
 
-      <div className="relative w-full max-w-7xl">
+      <div className="relative w-full ">
         {/* Left Shadow */}
         <div className="absolute left-0 top-0 h-full w-20  bg-transparent z-10 pointer-events-none" />
 
