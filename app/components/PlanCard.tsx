@@ -13,9 +13,9 @@ interface PlanCardProps {
 
 const PlanCard: React.FC<PlanCardProps> = ({ plan, isYearly = false }) => {
   return (
-    <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full ">
+    <div className="flex flex-col lg:w-6/12 max-md:ml-0 max-md:w-full ">
       <div className="flex flex-col items-start px-12 py-7 w-full h-full rounded-xl border-purple-600 border-solid border-[3px] max-md:px-5 max-md:mt-9 max-md:max-w-full min-h-[550px]">
-        <div className="flex gap-7 text-xl font-bold tracking-normal leading-snug text-center  text-white max-md:ml-1.5">
+        <div className="flex h-[35px] gap-7 text-xl font-bold tracking-normal leading-snug text-center  text-white max-md:ml-1.5">
 
           <div className="basis-auto">{plan.title}</div>
 
@@ -109,7 +109,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isYearly = false }) => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", duration: 0.45, bounce: 0.25 }}
-          className="gap-2.5 self-stretch mt-14 px-8 py-4  text-lg font-semibold text-white rounded-xl border-2 border-purple-600 border-solid min-h-[42px] max-md:px-5"
+          className="gap-2.5 self-stretch mt-14 px-8 py-3  text-lg font-semibold text-white rounded-xl border-2 border-purple-600 border-solid min-h-[42px] max-md:px-5"
         >
           {plan.buttonText}
         </motion.button>

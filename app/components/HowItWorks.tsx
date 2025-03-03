@@ -88,6 +88,8 @@ export const HowItWorks: React.FC = () => {
                   <strong>Quizlet, Anki, Gizmo and Vaia!</strong>
                 </>
               }
+              
+              headerImage="/assets/g1.png"
               additionalText="Don't you worry, study material generation is coming soon..."
               imageSrc="/Import your study material.png"
               iconSrc="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/c467af17d22dda03b3dc1a52c6acf73c29c603a0ade0a032a8957fbeec41f795"

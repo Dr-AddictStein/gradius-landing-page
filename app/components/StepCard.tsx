@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { StaticImageData } from 'next/image';
+import { img } from 'framer-motion/client';
 
 interface StepCardProps {
   stepNumber: string;
@@ -52,12 +53,15 @@ export const StepCard: React.FC<StepCardProps> = ({
 
       {/* Header Image */}
       {headerImage && (
-        <img
+        <div className="flex">
+          <img
           loading="lazy"
           src={headerImage}
-          className="object-contain z-0 max-w-full aspect-[1.91] w-[164px]"
+          className="object-contain z-0 max-w-full  aspect-[1.91] w-[164px]"
           alt="Header illustration"
         />
+        {stepNumber === "1" ? <img className='-ml-4 z-[999]' src='/assets/g2.png' /> : null}
+        </div>
       )}
 
       <div className="flex z-0 max-w-full min-h-[77px] w-[154px]" />
