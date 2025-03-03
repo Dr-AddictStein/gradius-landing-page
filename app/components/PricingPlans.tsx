@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 
 const monthlyPlan: PlanDetails = {
   title: "Monthly Plan",
-  price: "€14.99",
-  discountedPrice: "€0",
+  price: "\u20AC14.99",
+  discountedPrice: "\u20AC0",
   billingPeriod: "/month",
-  trialInfo: "Enjoy 7 days free trial, then €20/month.",
+  trialInfo: "Enjoy 7 days free trial, then \u20AC20/month.",
   billingInfo: "Billed Monthly.",
   features: [
     "Paid monthly, cancel anytime.",
@@ -22,13 +22,13 @@ const monthlyPlan: PlanDetails = {
 
 const yearlyPlan: PlanDetails = {
   title: "Yearly Plan",
-  price: "€9.99",
-  discountedPrice: "€0",
+  price: "\u20AC9.99",
+  discountedPrice: "\u20AC0",
   billingPeriod: "/month",
-  trialInfo: "Enjoy 7 days free trial, then €10/month.",
+  trialInfo: "Enjoy 7 days free trial, then \u20AC10/month.",
   billingInfo: "Billed annually.",
   features: [
-    "50% off: pay just €119.88/year.",
+    "50% off: pay just \u20AC119.88/year.",
     "Your AI-Tutor all year round!",
     "Never lose your progress!",
   ],
@@ -36,7 +36,6 @@ const yearlyPlan: PlanDetails = {
 };
 
 const PricingPlans: React.FC = () => {
-  const headingText = "Cool, but how does it work?!";
   const springTransition = {
     type: "spring",
     stiffness: 200,
@@ -57,6 +56,7 @@ const PricingPlans: React.FC = () => {
       transition: { duration: 0.2 },
     },
   };
+
   return (
     <div className="flex flex-col items-center mt-16 lg:mt-36 px-6 sm:px-12 lg:px-24 w-full">
       <div className="text-center max-w-4xl">
