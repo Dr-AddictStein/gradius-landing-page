@@ -30,7 +30,7 @@ const ChooseGradiusContent = () => {
           variants={{ visible: { transition: springTransition } }}
         >
           {headingText.split(" ").map((word, index) => (
-            <motion.span key={index} className="md:text-3xl  mr-2" variants={characterVariants}>
+            <motion.span key={index} className="md:text-3xl inline-block  mr-2" variants={characterVariants}>
               {word}
             </motion.span>
           ))}
