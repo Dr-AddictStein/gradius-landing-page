@@ -22,7 +22,7 @@ const ChooseGradius = () => {
           Backed by
         </h3>
         <h1
-          className="text-[100px] font-semibold text-center leading-tight 
+          className="text-[100px] pb-5 border font-semibold text-center leading-tight 
                bg-gradient-to-b from-[#6E27D5] to-[#39146F] 
                text-transparent bg-clip-text 
                drop-shadow-[0px_0px_15px_#A436F1]"
