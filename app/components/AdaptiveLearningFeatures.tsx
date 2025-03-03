@@ -29,7 +29,7 @@ const features: FeatureCardProps[] = [
 const AdaptiveLearningFeatures: React.FC = () => {
   return (
     <section
-      className="flex flex-col items-center lg:mt-[0px] justify-center px-4 py-20 w-full sm:px-8 lg:px-16"
+      className="flex flex-col items-center lg:mt-[150px] justify-center px-4 py-[50px] w-full sm:px-8 lg:px-16"
       style={{
 
         backgroundSize: 'cover',
@@ -73,7 +73,7 @@ const AdaptiveLearningFeatures: React.FC = () => {
 
 
       {/* Grid Layout for Cards */}
-      <div className="grid w-full max-w-screen-xl mx-auto gap-8 px-4 mt-16
+      <div className="grid w-full max-w-screen-xl mx-auto gap-8 px-4 lg:mt-[100px] mt-16
         grid-cols-1 
         md:grid-cols-2
        gap-x-8 gap-y-12"
