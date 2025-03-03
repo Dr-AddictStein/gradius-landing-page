@@ -20,10 +20,10 @@ const ChooseGradiusContent = () => {
   };
 
   return (
-    <div className="max-w-6xl w-11/12 mx-auto px-4 py-12 lg:mt-[160px]">
+    <div className="max-w-6xl w-11/12 mx-auto px-4 py-12 lg:mt-[200px]">
       <div className="text-center">
         <motion.h1
-          className="text-[#F3ECFE] pt-[180px] lg:pt-0 text-2xl md:text-5xl font-semibold drop-shadow-[0_0_10px_#A436F1]"
+          className="text-[#F3ECFE] pt-[160px] lg:pt-0 text-2xl md:text-5xl font-semibold drop-shadow-[0_0_10px_#A436F1]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
