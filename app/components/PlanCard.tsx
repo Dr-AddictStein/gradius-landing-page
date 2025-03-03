@@ -41,7 +41,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isYearly = false }) => {
 
               </div>
 
-              <div className="flex flex-col">
+              <div className="flex flex-col relative">
 
                 <img
                   loading="lazy"
@@ -53,7 +53,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isYearly = false }) => {
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/1fb2522fd6c94611a6950922dca36db5/5695f24427b3ec59adf43b74ede569df3f7511fa82029d8498d13a1add970c4b?apiKey=1fb2522fd6c94611a6950922dca36db5&"
-                  className="object-contain  aspect-square w-[16px]"
+                  className="object-contain mt-5 -ml-2 aspect-square "
                   alt=""
                 />
 
@@ -76,7 +76,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isYearly = false }) => {
 
         <div className="flex relative gap-1 mt-[20px] whitespace-nowrap max-md:mt-10 max-md:ml-0.5">
 
-          <div className="grow text-2xl leading-none text-center text-white">
+          <div className="grow text-2xl leading-none text-center ml-1 text-white mr-4">
             {plan.price}
           </div>
           <div className="w-[85px] top-3 absolute border-purple-900   border"></div>
