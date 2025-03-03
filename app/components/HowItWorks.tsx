@@ -61,7 +61,7 @@ export const HowItWorks: React.FC = () => {
             ))}
           </motion.h1>
 
-          <p className="self-center mt-3 sm:text-[24px] text-[14px] tracking-tight leading-tight  max-lg:max-w-full">
+          <p className="self-center mt-3 sm:text-[24px] text-[14px] mb-[150px] tracking-tight leading-tight  max-lg:max-w-full">
             Gradius makes you a better student by tailoring everything according
             to your needs and style. Here's how:
           </p>
