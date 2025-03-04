@@ -9,14 +9,14 @@ import ScrollToTop from "./ScrollToTop"; // Import ScrollToTop component
 const Hero = () => {
   return (
     <div>
-      <section className="max-w-[1440px] mx-auto relative flex flex-col items-center justify-center text-center md:mt-10 sm:mt-[180px] lg:mt-[150px] mt-[100px] px-6 sm:px-4">
+      <section className="max-w-[1440px] mx-auto relative flex flex-col items-center justify-center text-center md:mt-10  lg:mt-[150px] mt-[50px] px-6 sm:px-4">
         {/* Hero Content */}
         <div className="relative w-full flex flex-col justify-center">
           <motion.h1
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-[32px] sm:text-[48px] lg:text-[54px] md:text-[32px] md:pb-3 font-[500px] leading-tight tracking-tight text-white drop-shadow-md [text-shadow:_1px_1px_10px_#A436F1]"
+            className="text-[28px]  lg:text-[54px] md:text-[32px] md:pb-3 font-[500px] leading-tight tracking-tight text-white drop-shadow-md [text-shadow:_1px_1px_10px_#A436F1]"
           >
             Get the first self-trained AI Tutor that
             <br className="hidden sm:block" /> matches your unique learning style
@@ -26,7 +26,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="w-full sm:w-[500px] my-3 text-[#F3ECFEB2] mx-auto text-[14px] sm:text-[16px]"
+            className="w-full sm:w-[500px] my-3 text-[#F3ECFEB2] mx-auto text-[14px] md:text-[16px]"
           >
             Gradius identifies your learning needs, then adapts to your unique learning style to help you overcome them efficiently.
           </motion.p>

@@ -28,7 +28,7 @@ const ChooseGradiusContent = () => {
     <div className="max-w-7xl w-full relative mx-auto px-4 py-12 lg:mt-[300px]">
       <div className="text-center">
         <motion.h1
-          className="text-[#F3ECFE] pt-[160px] lg:pt-0 text-2xl lg:text-5xl font-semibold drop-shadow-[0_0_10px_#A436F1]"
+          className="text-[#F3ECFE] pt-[160px] lg:pt-0 text-[24px] md:text-[45px] lg:text-[54px] font-semibold drop-shadow-[0_0_10px_#A436F1]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
@@ -44,7 +44,7 @@ const ChooseGradiusContent = () => {
             </motion.span>
           ))}
         </motion.h1>
-        <p className="text-[#F3ECFE] text-sm mt-3">
+        <p className="text-[#F3ECFE] text-[14px] md:text-[18px] lg:text-[18px] mt-3">
           3 simple reasons to level up now
         </p>
       </div>
@@ -53,9 +53,8 @@ const ChooseGradiusContent = () => {
       {[1, 2, 3].map((item, index) => (
         <div
           key={index}
-          className={`flex flex-col md:flex-row  gap-4 md:gap-4 mt-16 md:mt-32 ${
-            index % 2 !== 0 ? "md:flex-row-reverse" : ""
-          }`}
+          className={`flex flex-col md:flex-row  gap-4 md:gap-4 mt-16 md:mt-32 ${index % 2 !== 0 ? "md:flex-row-reverse" : ""
+            }`}
         >
           {/* Image */}
           <Zoom>
@@ -72,9 +71,8 @@ const ChooseGradiusContent = () => {
 
           {/* Content */}
           <div
-            className={`flex-1 ${
-              index === 1 ? "text-right   " : "text-center md:text-left"
-            }`}
+            className={`flex-1 ${index === 1 ? "text-right   " : "text-center md:text-left"
+              }`}
           >
             <motion.h1
               className="text-[#F3ECFE] text-2xl md:text-3xl font-semibold drop-shadow-[0_0_10px_#A436F1]"
@@ -115,26 +113,25 @@ const ChooseGradiusContent = () => {
               )}
             </motion.h1>
             {
-              item===1 && <div className="absolute right-[48.5%] top-[17.7%]">
-              <img src={`/assets/layer3.png`}></img>
+              item === 1 && <div className="absolute right-[48.5%] top-[17.7%]">
+                <img src={`/assets/layer3.png`}></img>
               </div>
             }
             {
-              item===2 && <div className="absolute right-[47%] -rotate-12 top-[47%]">
-              <img src={`/assets/layyer8.png`}></img>
+              item === 2 && <div className="absolute right-[47%] -rotate-12 top-[47%]">
+                <img src={`/assets/layyer8.png`}></img>
               </div>
             }
 
-{
-              item===1 && <div className="absolute right-[51%] top-[78%]">
-              <img src={`/assets/layer3.png`}></img>
+            {
+              item === 1 && <div className="absolute right-[51%] top-[78%]">
+                <img src={`/assets/layer3.png`}></img>
               </div>
             }
 
             <div
-              className={`mt-6 mb-24 space-y-3 ${
-                index === 1 ? "flex flex-col items-end" : ""
-              }`}
+              className={`mt-6 mb-24 space-y-3 ${index === 1 ? "flex flex-col items-end" : ""
+                }`}
             >
               {[
                 [
@@ -156,9 +153,8 @@ const ChooseGradiusContent = () => {
               ][index].map((text, j) => (
                 <p
                   key={j}
-                  className={`flex items-start text-sm md:text-[20px] bg-gradient-to-r from-[#FFFFFF] to-[#A436F1]  text-transparent bg-clip-text ${
-                    index === 1 ? "justify-end" : ""
-                  }`}
+                  className={`flex items-start text-sm md:text-[20px] bg-gradient-to-r from-[#FFFFFF] to-[#A436F1]  text-transparent bg-clip-text ${index === 1 ? "justify-end" : ""
+                    }`}
                 >
                   <DotIcon className="text-white mr-2 mt-1 text-3xl h-5" />{" "}
                   {text}

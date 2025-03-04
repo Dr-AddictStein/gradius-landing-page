@@ -27,7 +27,7 @@ export default function ScrollToTop() {
             onClick={scrollToTop}
             className={`fixed bottom-6 right-6 p-3 bg-[#A436F1] text-white rounded-full shadow-lg transition-opacity duration-300 hover:bg-[#160F22] ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
         >
-            <ArrowUpIcon size={20} />
+            <ArrowUpIcon size={28} />
         </button>
     );
 }
