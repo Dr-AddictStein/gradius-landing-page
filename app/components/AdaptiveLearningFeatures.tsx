@@ -29,7 +29,7 @@ const features: FeatureCardProps[] = [
 const AdaptiveLearningFeatures: React.FC = () => {
   return (
     <section
-      className="flex flex-col items-center lg:mt-[150px] justify-center px-4 py-[50px] w-full sm:px-8 lg:px-16"
+      className="flex flex-col items-center lg:mt-[150px] md:mt-[100px] justify-center px-4 py-[50px] w-full sm:px-8 lg:px-16"
       style={{
 
         backgroundSize: 'cover',
@@ -40,7 +40,7 @@ const AdaptiveLearningFeatures: React.FC = () => {
       <div className="flex flex-col self-center max-w-full text-center w-[846px]">
         <div className="flex flex-col w-full max-md:max-w-full">
           <motion.h1
-            className="text-[54px]  font-[500px] tracking-tighter leading-[62px] sm:text-[#0F0F0F] max-md:max-w-full max-md:text-4xl [text-shadow:_1px_1px_8px_#a436f1]"
+            className="lg:text-[54px] md:text-[45px] text-[24px] font-[500px] tracking-tighter leading-[62px] sm:text-[#0F0F0F] max-md:max-w-full [text-shadow:_1px_1px_8px_#a436f1]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-20% 0px" }}
@@ -55,7 +55,7 @@ const AdaptiveLearningFeatures: React.FC = () => {
           </motion.h1>
 
           <motion.p
-            className="mt-6 text-lg tracking-tight leading-7 sm:text-[#0F0F0F]  max-md:max-w-full"
+            className="lg:mt-6 mt-3 lg:text-[18px] md:text-[18px] text-[14px] lg:tracking-tight lg:leading-7 sm:text-[#0F0F0F]  max-md:max-w-full"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

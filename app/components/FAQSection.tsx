@@ -36,17 +36,17 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center px-6 md:px-24 lg:py-16 lg:-mt-24 md:-mt-0 text-black">
+    <div className="flex flex-col items-center px-6 md:px-24 lg:py-16 lg:-mt-16 md:-mt-0 text-black">
       {/* FAQ Heading */}
       <motion.h1
-        className="text-[#F3ECFE] text-3xl md:text-5xl font-semibold text-center drop-shadow-[0_0_10px_#A436F1]"
+        className="text-[#F3ECFE] text-[24px] md:text-[45px] lg:text-[54px] font-[500px] text-center drop-shadow-[0_0_10px_#A436F1]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         Frequently Asked Questions
       </motion.h1>
-      <p className="mt-4 text-lg text-center text-[#F2EBFD]">
+      <p className="mt-4 text-[18px] text-center text-[#F2EBFD]">
         Everything you need to know about the product and features.
       </p>
 
@@ -56,7 +56,7 @@ const FAQSection: React.FC = () => {
           {faqData.map((item, index) => (
             <div key={index} className="flex flex-col w-full">
               <button
-                className="flex items-center justify-between p-4 w-full bg-[#160F22] rounded-lg cursor-pointer text-white transition-all hover:bg-[#1D112B] focus:outline-none"
+                className="flex items-center justify-between p-4 font-[500px] w-full bg-[#160F22] rounded-lg cursor-pointer text-white transition-all hover:bg-[#1D112B] focus:outline-none"
                 onClick={() => toggleFAQ(index)}
                 aria-expanded={openIndex === index}
               >

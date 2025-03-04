@@ -61,7 +61,7 @@ const PricingPlans: React.FC = () => {
     <div className="flex flex-col items-center mt-16 lg:mt-36 px-6 sm:px-12 lg:px-24 w-full">
       <div className="text-center max-w-4xl">
         <motion.h1
-          className="text-[#F3ECFE] text-2xl lg:text-5xl font-semibold drop-shadow-[0_0_10px_#A436F1]"
+          className="text-[#F3ECFE] text-[24px] md:text-[45px] lg:text-[54px] font-[500px] drop-shadow-[0_0_10px_#A436F1]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
@@ -73,12 +73,12 @@ const PricingPlans: React.FC = () => {
             </motion.span>
           ))}
         </motion.h1>
-        <p className="mt-6 text-lg leading-7 text-purple-100 text-opacity-70">
+        <p className="mt-6 text-[14px] lg:text-[18px] md:text-[18px] leading-7 text-purple-100 text-opacity-70">
           Get started today—your first 7 days are on us! <br /> No card required!
         </p>
       </div>
 
-      <div className="mt-12 w-full lg:max-w-6xl flex flex-col lg:flex-row gap-6">
+      <div className="mt-12 w-full lg:w-[1000px] md:w-[450px]  flex flex-col lg:flex-row gap-6">
         <PlanCard plan={monthlyPlan} />
         <PlanCard plan={yearlyPlan} isYearly={true} />
       </div>
