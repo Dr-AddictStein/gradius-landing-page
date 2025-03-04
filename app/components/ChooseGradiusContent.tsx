@@ -58,14 +58,10 @@ const ChooseGradiusContent = () => {
         >
           {/* Image */}
           <Zoom>
-            <div className="lg:w-24 md:w-32">
-              <Image
-                src={`/assets/${item}.png`}
-                width={100}
-                height={127}
-                alt={`${item}`}
-                layout="responsive"
-              />
+            <div className="lg:w-24 md:w-32 flex justify-center border-red-600">
+              <img src={`/assets/${item}.png`} />
+              
+              
             </div>
           </Zoom>
 
@@ -113,6 +109,7 @@ const ChooseGradiusContent = () => {
               )}
             </motion.h1>
             {
+<<<<<<< HEAD
               item === 1 && <div className="absolute right-[48.5%] top-[17.7%]">
                 <img src={`/assets/layer3.png`}></img>
               </div>
@@ -126,6 +123,21 @@ const ChooseGradiusContent = () => {
             {
               item === 1 && <div className="absolute right-[51%] top-[78%]">
                 <img src={`/assets/layer3.png`}></img>
+=======
+              item===1 && <div className="absolute hidden lg:inline-block  right-[48.5%] top-[17.7%]">
+              <img src={`/assets/layer3.png`}></img>
+              </div>
+            }
+            {
+              item===2 && <div className="absolute right-[47%] -rotate-12 top-[47%] hidden lg:inline-block">
+              <img src={`/assets/layyer8.png`}></img>
+              </div>
+            }
+
+{
+              item===1 && <div className="absolute right-[51%] top-[78%] hidden lg:inline-block">
+              <img src={`/assets/layer3.png`}></img>
+>>>>>>> c2b7bbfb562167cb4a78f22cbe4111ca0a04f323
               </div>
             }
 
