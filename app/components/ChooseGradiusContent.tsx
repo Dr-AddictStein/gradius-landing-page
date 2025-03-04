@@ -60,8 +60,8 @@ const ChooseGradiusContent = () => {
           <Zoom>
             <div className="lg:w-24 md:w-32 flex justify-center border-red-600">
               <img src={`/assets/${item}.png`} />
-              
-              
+
+
             </div>
           </Zoom>
 
@@ -84,7 +84,7 @@ const ChooseGradiusContent = () => {
                     Stop Worrying About Finding the
                   </motion.span>
                   <motion.span
-                    className="block mt-3"
+                    className="lg:block mt-3"
                     variants={characterVariants}
                   >
                     Right Study Method
@@ -100,7 +100,7 @@ const ChooseGradiusContent = () => {
                   .map((word, i) => (
                     <motion.span
                       key={i}
-                      className="inline-block mr-2"
+                      className="lg:inline-block lg:mr-2"
                       variants={characterVariants}
                     >
                       {word}
@@ -109,40 +109,24 @@ const ChooseGradiusContent = () => {
               )}
             </motion.h1>
             {
-<<<<<<< HEAD
-              item === 1 && <div className="absolute right-[48.5%] top-[17.7%]">
+              item === 1 && <div className="absolute hidden lg:inline-block  right-[48.5%] top-[17.7%]">
                 <img src={`/assets/layer3.png`}></img>
               </div>
             }
             {
-              item === 2 && <div className="absolute right-[47%] -rotate-12 top-[47%]">
+              item === 2 && <div className="absolute right-[47%] -rotate-12 top-[47%] hidden lg:inline-block">
                 <img src={`/assets/layyer8.png`}></img>
               </div>
             }
 
             {
-              item === 1 && <div className="absolute right-[51%] top-[78%]">
+              item === 1 && <div className="absolute right-[51%] top-[78%] hidden lg:inline-block">
                 <img src={`/assets/layer3.png`}></img>
-=======
-              item===1 && <div className="absolute hidden lg:inline-block  right-[48.5%] top-[17.7%]">
-              <img src={`/assets/layer3.png`}></img>
-              </div>
-            }
-            {
-              item===2 && <div className="absolute right-[47%] -rotate-12 top-[47%] hidden lg:inline-block">
-              <img src={`/assets/layyer8.png`}></img>
-              </div>
-            }
-
-{
-              item===1 && <div className="absolute right-[51%] top-[78%] hidden lg:inline-block">
-              <img src={`/assets/layer3.png`}></img>
->>>>>>> c2b7bbfb562167cb4a78f22cbe4111ca0a04f323
               </div>
             }
 
             <div
-              className={`mt-6 mb-24 space-y-3 ${index === 1 ? "flex flex-col items-end" : ""
+              className={`mt-6 mb-24 space-y-3 ${index === 1 ? "flex flex-col lg:items-end" : ""
                 }`}
             >
               {[
@@ -168,7 +152,7 @@ const ChooseGradiusContent = () => {
                   className={`flex items-start text-sm md:text-[20px] bg-gradient-to-r from-[#FFFFFF] to-[#A436F1]  text-transparent bg-clip-text ${index === 1 ? "justify-end" : ""
                     }`}
                 >
-                  <DotIcon className="text-white mr-2 mt-1 text-3xl h-5" />{" "}
+                  <DotIcon className="text-white mr-2 mt-1 lg:text-3xl h-5" />{" "}
                   {text}
                 </p>
               ))}
