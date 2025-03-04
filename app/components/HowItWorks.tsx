@@ -45,7 +45,7 @@ export const HowItWorks: React.FC = () => {
         <div className="flex flex-col w-full max-lg:max-w-full">
           {/* Animated Heading */}
           <motion.h1
-            className="[text-shadow:_1px_1px_8px_#a436f1] pb-5 leading-[62px] pt-24 lg:text-[54px] font-[500px] text-[24px] lg:text-5xl  tracking-tighter  text-[#3D1576]"
+            className="[text-shadow:_1px_1px_8px_#a436f1] pb-5 leading-5 pt-24 lg:text-[54px] font-[500px] text-[24px] md:text-[45px] tracking-tighter  text-[#3D1576]"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-20% 0px" }}
@@ -62,10 +62,16 @@ export const HowItWorks: React.FC = () => {
             ))}
           </motion.h1>
 
-          <p className="self-center mt-3 lg:text-[18px] text-[14px] mb-[150px] font-[400px] tracking-tight leading-tight  max-lg:max-w-full">
-            Gradius makes you a better student by tailoring everything according
-            to your needs and style. Here's how:
+          <p className="self-center -mt-5 md:mt-3 lg:text-[18px] text-[14px] md:text-[18px] lg:mb-[150px] font-[400px] tracking-tight leading-5 max-lg:max-w-full">
+            {`Gradius makes you a  better student by tailoring everything according to your needs and style. Here's how:`.split(" ").map((word, index) => (
+              <span key={index}>
+                {word}
+                {index !== 17 && ' '}
+              </span>
+            ))}
           </p>
+
+
         </div>
       </header>
 
@@ -110,18 +116,18 @@ export const HowItWorks: React.FC = () => {
           </div>
 
           {/* Bottom Centered Image */}
-         
+
           <div className="absolute hidden lg:inline-block  -bottom-14 right-56">
-          <Slide direction="down">
-            <Image
-              src={"/assets/Elements.png"}
-              width={205}
-              height={160}
-              alt="icon"
-            />
-             </Slide>
+            <Slide direction="down">
+              <Image
+                src={"/assets/Elements.png"}
+                width={205}
+                height={160}
+                alt="icon"
+              />
+            </Slide>
           </div>
-         
+
         </div>
 
         {/* card 2 */}
@@ -165,13 +171,13 @@ export const HowItWorks: React.FC = () => {
 
 
           <div className="absolute hidden lg:inline-block  -bottom-14 left-0">
-          <Slide direction="down">
-            <Image
-              src={"/assets/Element3.png"}
-              width={205}
-              height={160}
-              alt="icon"
-            />
+            <Slide direction="down">
+              <Image
+                src={"/assets/Element3.png"}
+                width={205}
+                height={160}
+                alt="icon"
+              />
             </Slide>
           </div>
         </div>
@@ -219,13 +225,13 @@ export const HowItWorks: React.FC = () => {
 
           {/* Bottom Centered Image */}
           <div className="absolute hidden lg:inline-block -bottom-14 right-56">
-          <Slide direction="down">
-            <Image
-              src={"/assets/Elements.png"}
-              width={205}
-              height={160}
-              alt="icon"
-            />
+            <Slide direction="down">
+              <Image
+                src={"/assets/Elements.png"}
+                width={205}
+                height={160}
+                alt="icon"
+              />
             </Slide>
           </div>
         </div>
@@ -259,14 +265,14 @@ export const HowItWorks: React.FC = () => {
 
 
           <div className="absolute hidden lg:inline-block  -bottom-14 ">
-          <Slide direction="down">
+            <Slide direction="down">
 
-            <Image
-              src={"/assets/Element3.png"}
-              width={205}
-              height={160}
-              alt="icon"
-            />
+              <Image
+                src={"/assets/Element3.png"}
+                width={205}
+                height={160}
+                alt="icon"
+              />
             </Slide>
           </div>
         </div>
