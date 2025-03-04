@@ -11,7 +11,7 @@ const PersonalizedLearning = () => {
   return (
     <section
 
-      className="relative flex flex-col max-w-7xl mx-auto items-center justify-center mt-20  px-4"
+      className="relative flex flex-col max-w-7xl mx-auto items-center justify-center mt-[250px] md:mt-[100px]  px-4"
 
       style={{
         backgroundImage: `
@@ -42,7 +42,7 @@ const PersonalizedLearning = () => {
 
 
       {/* Frames */}
-      <div className="w-full mt-8">
+      <div className="w-full lg:mt-[100px] mt-8">
         {/* Body 1 with Scroll Zoom Effect */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0, filter: "blur(10px)" }}

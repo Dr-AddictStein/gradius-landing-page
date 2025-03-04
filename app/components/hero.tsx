@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import ScrollToTop from "./ScrollToTop"; // Import ScrollToTop component
 
 const Hero = () => {
   return (
@@ -39,7 +40,7 @@ const Hero = () => {
             Study Less <span className="text-[#F3ECFEB2]">get</span> Better Grades
           </motion.p>
 
-          {/* Star Images with Motion Animation */}
+          {/* Star Images */}
           {[
             { src: "/StarBig.png", alt: "Star", width: 40, height: 40, style: "absolute -top-[15%] left-[16%] " },
             { src: "/StarBig.png", alt: "Star", width: 40, height: 40, style: "absolute -top-[17%] right-[16%] " },
@@ -77,6 +78,9 @@ const Hero = () => {
           </motion.button>
         </motion.div>
       </section>
+
+      {/* Scroll to Top Button */}
+
     </div>
   );
 };

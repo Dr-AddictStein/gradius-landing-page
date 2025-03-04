@@ -17,6 +17,7 @@ import ChooseGradiusContent from "./components/ChooseGradiusContent";
 import PricingPlans from "./components/PricingPlans";
 import FAQSection from "./components/FAQSection";
 import UpLavel from "./components/UpLavel";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Home() {
 
@@ -83,7 +84,7 @@ export default function Home() {
             <Footer companyLinks={companyLinks} infoLinks={infoLinks} />
           </div>
 
-
+          <ScrollToTop />
         </main>
       </div>
     </div>

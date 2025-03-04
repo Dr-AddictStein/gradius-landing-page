@@ -32,7 +32,7 @@ export const HowItWorks: React.FC = () => {
 
   return (
     <section
-      className="flex flex-col lg:mt-[20px] items-center lg:px-32 px-8 pt-24 w-full max-lg:px-5 "
+      className="flex flex-col lg:mt-[100px] items-center lg:px-32 px-8 pt-24 w-full max-lg:px-5 "
       style={{
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -44,7 +44,7 @@ export const HowItWorks: React.FC = () => {
         <div className="flex flex-col w-full max-lg:max-w-full">
           {/* Animated Heading */}
           <motion.h1
-            className="[text-shadow:_1px_1px_8px_#a436f1] -pt-24 sm:text-[54px] text-[24px] lg:text-5xl font-medium tracking-tighter leading-tight text-[#3D1576]"
+            className="[text-shadow:_1px_1px_8px_#a436f1] pt-24 sm:text-[54px] text-[24px] lg:text-5xl font-medium tracking-tighter leading-tight text-[#3D1576]"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-20% 0px" }}
@@ -61,14 +61,14 @@ export const HowItWorks: React.FC = () => {
             ))}
           </motion.h1>
 
-          <p className="self-center mt-3 sm:text-[24px] text-[14px] tracking-tight leading-tight  max-lg:max-w-full">
+          <p className="self-center mt-3 sm:text-[24px] text-[14px] mb-[150px] tracking-tight leading-tight  max-lg:max-w-full">
             Gradius makes you a better student by tailoring everything according
             to your needs and style. Here's how:
           </p>
         </div>
       </header>
 
-      <div className="flex overflow-hidden  flex-col max-w-full w-[1175px] sm:mt-20 mt-10">
+      <div className="flex overflow-hidden  flex-col max-w-full w-[1175px] sm:mt-20 mt-[150px]">
         <div className="flex items-center relative justify-between">
           {/* Left Content */}
 
@@ -88,7 +88,7 @@ export const HowItWorks: React.FC = () => {
                   <strong>Quizlet, Anki, Gizmo and Vaia!</strong>
                 </>
               }
-              
+
               headerImage="/assets/g1.png"
               additionalText="Don't you worry, study material generation is coming soon..."
               imageSrc="/Import your study material.png"
