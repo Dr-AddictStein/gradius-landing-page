@@ -6,6 +6,7 @@ import { UnlockPotentialCard } from "./UnlockPotentialCard";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import logo from '/public/logo.png'
+import { Slide } from "react-awesome-reveal";
 export const HowItWorks: React.FC = () => {
   const headingText = "Cool, but how does it work?!";
 
@@ -109,14 +110,18 @@ export const HowItWorks: React.FC = () => {
           </div>
 
           {/* Bottom Centered Image */}
+         
           <div className="absolute hidden lg:inline-block  -bottom-14 right-56">
+          <Slide direction="down">
             <Image
               src={"/assets/Elements.png"}
               width={205}
               height={160}
               alt="icon"
             />
+             </Slide>
           </div>
+         
         </div>
 
         {/* card 2 */}
@@ -160,12 +165,14 @@ export const HowItWorks: React.FC = () => {
 
 
           <div className="absolute hidden lg:inline-block  -bottom-14 left-0">
+          <Slide direction="down">
             <Image
               src={"/assets/Element3.png"}
               width={205}
               height={160}
               alt="icon"
             />
+            </Slide>
           </div>
         </div>
 
@@ -212,12 +219,14 @@ export const HowItWorks: React.FC = () => {
 
           {/* Bottom Centered Image */}
           <div className="absolute hidden lg:inline-block -bottom-14 right-56">
+          <Slide direction="down">
             <Image
               src={"/assets/Elements.png"}
               width={205}
               height={160}
               alt="icon"
             />
+            </Slide>
           </div>
         </div>
 
@@ -250,12 +259,15 @@ export const HowItWorks: React.FC = () => {
 
 
           <div className="absolute hidden lg:inline-block  -bottom-14 ">
+          <Slide direction="down">
+
             <Image
               src={"/assets/Element3.png"}
               width={205}
               height={160}
               alt="icon"
             />
+            </Slide>
           </div>
         </div>
 
