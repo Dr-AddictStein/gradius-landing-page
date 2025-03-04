@@ -31,10 +31,10 @@ const ChooseGradiusNew = () => {
 
       {/* Animated Stars */}
       {[
-        { top: "-top-10 left-[28%]", delay: 0 },  // Top Left Star
-        { top: "-top-10 right-[28%]", delay: 0.2 }, // Top Right Star
-        { top: "top-1/2 left-[18%]", delay: 0.4 },  // Middle Left Star
-        { top: "top-1/2 right-[19%]", delay: 0.6 }, // Middle Right Star
+        { top: "-top-7 left-[28%]", delay: 0 },  // Top Left Star
+        { top: "-top-7 right-[28%]", delay: 0.2 }, // Top Right Star
+        { top: "top-[54%] left-[12%]", delay: 0.4 },  // Middle Left Star
+        { top: "top-[54%] right-[12%]", delay: 0.6 }, // Middle Right Star
         { top: "top-[120%] left-[30%]", delay: 0.8 },  // Bottom Left Star
         { top: "top-[120%] right-[25%]", delay: 1.0 }, // Bottom Right Star
       ].map((star, index) => (

@@ -29,6 +29,23 @@ const faqData = [
 ];
 
 const FAQSection: React.FC = () => {
+  const headingText = " Frequently Asked Questions";
+  const springTransition = {
+    type: "spring",
+    stiffness: 80,
+    damping: 25,
+    staggerChildren: 0.08,
+  };
+
+  const characterVariants = {
+    hidden: { filter: "blur(8px)", y: 15, opacity: 0 },
+    visible: {
+      filter: "blur(0)",
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.6 },
+    },
+  };
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -39,13 +56,22 @@ const FAQSection: React.FC = () => {
     <div className="flex flex-col items-center px-6 md:px-24 lg:py-16 lg:-mt-16 md:-mt-0 text-black">
       {/* FAQ Heading */}
       <motion.h1
-        className="text-[#F3ECFE] text-[24px] md:text-[45px] lg:text-[54px] font-[500px] text-center drop-shadow-[0_0_10px_#A436F1]"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        Frequently Asked Questions
-      </motion.h1>
+          className="text-[#F3ECFE] text-[24px] md:text-[45px] lg:text-[54px] font-[500px] text-center drop-shadow-[0_0_10px_#A436F1]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+          variants={{ visible: { transition: springTransition } }}
+        >
+          {headingText.split(" ").map((word, index) => (
+            <motion.span
+              key={index}
+              className="md:text-3xl lg:text-5xl inline-block mr-2"
+              variants={characterVariants}
+            >
+              {word}
+            </motion.span>
+          ))}
+        </motion.h1>
       <p className="mt-4 text-[18px] text-center text-[#F2EBFD]">
         Everything you need to know about the product and features.
       </p>
