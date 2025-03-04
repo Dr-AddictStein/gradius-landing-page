@@ -67,7 +67,7 @@ const PersonalizedLearning = () => {
               <span className=" text-[#F3ECFE] ">
                 Gradius
               </span>{" "}
-              <span className="text-[#A436F1]"> identifies your <br /> learning needs...</span>
+              identifies your <br /><span className="text-[#A436F1]"> learning needs...</span>
               <div className="inline-flex ml-8 align-middle relative">
                 <Image
                   height={24}
