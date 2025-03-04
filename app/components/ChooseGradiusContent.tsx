@@ -71,7 +71,7 @@ const ChooseGradiusContent = () => {
               }`}
           >
             <motion.h1
-              className="text-[#F3ECFE] text-2xl md:text-3xl font-semibold drop-shadow-[0_0_10px_#A436F1]"
+              className="text-[#F3ECFE]  text-2xl md:text-3xl font-semibold drop-shadow-[0_0_10px_#A436F1]"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false, amount: 0.3 }}
@@ -126,7 +126,7 @@ const ChooseGradiusContent = () => {
             }
 
             <div
-              className={`mt-6 mb-24 space-y-3 ${index === 1 ? "flex flex-col lg:items-end" : ""
+              className={`mt-6 mb-24 space-y-3 ${index === 1 ? "flex flex-col lg:items-end" : " text-start"
                 }`}
             >
               {[
