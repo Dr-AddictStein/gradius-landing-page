@@ -11,7 +11,7 @@ const Study = () => {
                 whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
                 viewport={{ once: false, amount: 0.2 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
-                className="font-medium text-[32px] sm:text-[50px] md:text-[70px] lg:pt-14 pt-36 lg:text-[80px] leading-tight text-center bg-clip-text text-transparent bg-gradient-to-b from-[#A436F1] to-[#6E27D5]"
+                className="font-[500px] text-[32px] sm:text-[50px] md:text-[70px] lg:pt-14 pt-36 lg:text-[75px] leading-tight text-center bg-clip-text text-transparent bg-gradient-to-b from-[#A436F1] to-[#6E27D5]"
             >
                 Find Your Perfect
             </motion.h1>
@@ -21,7 +21,7 @@ const Study = () => {
                 whileInView={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
                 viewport={{ once: false, amount: 0.2 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
-                className="font-medium text-[40px] sm:text-[60px] md:text-[90px] lg:text-[110px] leading-tight text-center bg-clip-text text-transparent bg-gradient-to-b  from-[#6E27D5] to-[#39146F]"
+                className="font-[500px] text-[40px] sm:text-[60px] md:text-[90px] lg:text-[120px] leading-tight text-center bg-clip-text text-transparent bg-gradient-to-b  from-[#6E27D5] to-[#39146F]"
             >
                 Study Method
             </motion.h1>

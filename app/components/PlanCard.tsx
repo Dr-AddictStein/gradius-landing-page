@@ -79,7 +79,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, isYearly = false }) => {
           <div className="grow text-2xl leading-none text-center ml-1 text-white mr-4">
             {plan.price}
           </div>
-          <div className="w-[85px] top-3 absolute border-purple-900   border"></div>
+          <div className="w-[85px] top-3 absolute border-[#A436F1]   border-2"></div>
           <div className="text-sm tracking-wide leading-snug text-zinc-400">
             {plan.billingPeriod}
           </div>

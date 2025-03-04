@@ -64,10 +64,10 @@ const PersonalizedLearning = () => {
 
           <div className="flex-1 relative text-[#F3ECFEB2]">
             <h2 className="md:text-4xl text-xl mt-7 font-semibold leading-snug">
-              <span className="text-[#A436F1] ">
+              <span className=" text-[#F3ECFE] ">
                 Gradius
               </span>{" "}
-              <span className="text-[#F3ECFE]"> identifies your <br /> learning needs...</span>
+              <span className="text-[#A436F1]"> identifies your <br /> learning needs...</span>
               <div className="inline-flex ml-8 align-middle relative">
                 <Image
                   height={24}

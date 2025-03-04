@@ -9,14 +9,14 @@ import ScrollToTop from "./ScrollToTop"; // Import ScrollToTop component
 const Hero = () => {
   return (
     <div>
-      <section className="max-w-[1440px] mx-auto relative flex flex-col items-center justify-center text-center sm:mt-[180px] lg:mt-[150px] mt-[100px] px-6 sm:px-4">
+      <section className="max-w-[1440px] mx-auto relative flex flex-col items-center justify-center text-center md:mt-10 sm:mt-[180px] lg:mt-[150px] mt-[100px] px-6 sm:px-4">
         {/* Hero Content */}
         <div className="relative w-full flex flex-col justify-center">
           <motion.h1
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-[32px] sm:text-[48px] lg:text-[54px] md:text-[32px] md:pb-3 font-bold leading-tight tracking-tight text-white drop-shadow-md [text-shadow:_1px_1px_10px_#A436F1]"
+            className="text-[32px] sm:text-[48px] lg:text-[54px] md:text-[32px] md:pb-3 font-[500px] leading-tight tracking-tight text-white drop-shadow-md [text-shadow:_1px_1px_10px_#A436F1]"
           >
             Get the first self-trained AI Tutor that
             <br className="hidden sm:block" /> matches your unique learning style
